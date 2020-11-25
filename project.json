@@ -1,0 +1,8 @@
+{
+  "engine": "cocos-creator-js",
+  "packages": "packages",
+  "name": "girlchess",
+  "id": "f367c775-ebbe-4244-8845-388e8230bf92",
+  "version": "2.4.2",
+  "isNew": false
+}
