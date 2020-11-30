@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "setgame_up_btn",
+    "texture": "de258e6a-cf07-4052-bdf8-962e28ef2947",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      327,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      327,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

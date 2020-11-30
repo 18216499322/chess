@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "giveup",
+    "texture": "ba52aaa5-3146-4972-9790-a38a1436edb9",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      69,
+      109
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      69,
+      109
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "supportus_down_btn",
+    "texture": "f52b4fb2-87c9-463c-bcbc-60da97984829",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      327,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      327,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

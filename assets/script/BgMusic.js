@@ -23,14 +23,12 @@ cc.Class({
     onLoad () {
         cc.game.addPersistRootNode(this.node); 
         this.bgMusicChannel = cc.audioEngine.play(this.bgMusic,true,1); 
-        console.log("onLoad"+this.bgMusicChannel)
         flag=true;
     },
 
     playBgMusic(){
         this.bgMusicChannel = cc.audioEngine.play(this.bgMusic,true,1);
         flag=true;
-        console.log("playBgMusic"+this.bgMusicChannel)
     },
 
     stopBgMusic(){

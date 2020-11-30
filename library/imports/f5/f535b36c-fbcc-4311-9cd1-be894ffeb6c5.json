@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "setgame_down_btn",
+    "texture": "a4a3a26b-4d02-426b-ac37-5d2c8b66b95e",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      327,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      327,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

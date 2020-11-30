@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "exitgame_down_btn",
+    "texture": "f6a57a81-6506-4889-8a64-2fbaabf3f06f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      327,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      327,
+      68
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

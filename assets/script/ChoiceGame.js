@@ -23,6 +23,7 @@ cc.Class({
     choiceGame(){
         cc.find("Canvas/game_bg/menu").active = false;
         cc.find("Canvas/game_bg/choiceGame").active = true;
+        choicePanel = true;
     }
 
     // update (dt) {},

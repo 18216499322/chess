@@ -22,9 +22,10 @@ cc.Class({
 
     returnForward(){
         this.node.parent.active = false;
-        if(!cc.find("Canvas/game_bg/menu").active){
+        if(cc.find("Canvas/game_bg/menu")!=null&&!cc.find("Canvas/game_bg/menu").active){
             cc.find("Canvas/game_bg/menu").active = true;
         }
+        choicePanel = false;
     }
 
     // update (dt) {},
