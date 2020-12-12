@@ -11,7 +11,29 @@ cc.Class({
     onLoad () {
         this.node.on(cc.Node.EventType.TOUCH_START,
             function(e){
-                enemyName = null;
+                var enemyName = null;
+                var des_x = null;
+                var des_y = null;
+                var pre_x = null;
+                var pre_y = null;
+                var cur_i = null;
+                var cur_j = null;
+                var pre_i = null;
+                var pre_j = null;
+                var pre_node = null;
+                var myJiang = null;
+                var enemyJiang = null;
+                var mj_x = null;
+                var mj_y = null;
+                var mj_i = null;//目标逻辑坐标
+                var mj_j = null;
+                var j_x = null;
+                var j_y = null;
+                var j_i = null;//目标逻辑坐标
+                var j_j = null;
+                var pre_obj = null;
+                var cur_obj = null;
+
                 des_x = this.node.x;//目标位置
                 des_y = this.node.y;
                 pre_node = cc.find("Canvas/game_bg/grid/chess/"+curName);
@@ -232,14 +254,14 @@ cc.Class({
         if(gameMap[x][y]!=0)return;
         if(y-1>=0){
             if(x+1<=9){
-                if(gameMap[x+1][y-1]!=0&&gameMap[x+1][y-1].substr(2,1)=='j'){
+                if(gameMap[x+1][y-1]!=0&&gameMap[x+1][y-1].substr(2,1)=='j'&&gameMap[x+1][y-1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }
         }
         if(y+1<=8){
             if(x+1<=9){
-                if(gameMap[x+1][y+1]!=0&&gameMap[x+1][y+1].substr(2,1)=='j'){
+                if(gameMap[x+1][y+1]!=0&&gameMap[x+1][y+1].substr(2,1)=='j'&&gameMap[x+1][y+1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }
@@ -251,14 +273,14 @@ cc.Class({
         if(gameMap[x][y]!=0)return;
         if(y-1>=0){
             if(x-1>=0){
-                if(gameMap[x-1][y-1]!=0&&gameMap[x-1][y-1].substr(2,1)=='j'){
+                if(gameMap[x-1][y-1]!=0&&gameMap[x-1][y-1].substr(2,1)=='j'&&gameMap[x-1][y-1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }
         }
         if(y+1<=8){
             if(x-1>=0){
-                if(gameMap[x-1][y+1]!=0&&gameMap[x-1][y+1].substr(2,1)=='j'){
+                if(gameMap[x-1][y+1]!=0&&gameMap[x-1][y+1].substr(2,1)=='j'&&gameMap[x-1][y+1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }
@@ -270,14 +292,14 @@ cc.Class({
         if(gameMap[x][y]!=0)return;
         if(x+1<=9){
             if(y-1>=0){
-                if(gameMap[x+1][y-1]!=0&&gameMap[x+1][y-1].substr(2,1)=='j'){
+                if(gameMap[x+1][y-1]!=0&&gameMap[x+1][y-1].substr(2,1)=='j'&&gameMap[x+1][y-1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }
         }
         if(x-1>=0){
             if(y-1>=0){
-                if(gameMap[x-1][y-1]!=0&&gameMap[x-1][y-1].substr(2,1)=='j'){
+                if(gameMap[x-1][y-1]!=0&&gameMap[x-1][y-1].substr(2,1)=='j'&&gameMap[x-1][y-1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote(); 
                 }
             }
@@ -289,14 +311,14 @@ cc.Class({
         if(gameMap[x][y]!=0)return;
         if(x+1<=9){
             if(y+1<=8){
-                if(gameMap[x+1][y+1]!=0&&gameMap[x+1][y+1].substr(2,1)=='j'){
+                if(gameMap[x+1][y+1]!=0&&gameMap[x+1][y+1].substr(2,1)=='j'&&gameMap[x+1][y+1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }
         }
         if(x-1>=0){
             if(y+1<=8){
-                if(gameMap[x-1][y+1]!=0&&gameMap[x-1][y+1].substr(2,1)=='j'){
+                if(gameMap[x-1][y+1]!=0&&gameMap[x-1][y+1].substr(2,1)=='j'&&gameMap[x-1][y+1].substr(0,1)==host){
                     cc.find("music").getComponent("Music").playPromote();
                 }
             }

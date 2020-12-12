@@ -26,6 +26,10 @@ cc.Class({
     loss: {
       "default": null,
       type: cc.AudioClip
+    },
+    again: {
+      "default": null,
+      type: cc.AudioClip
     }
   },
   // LIFE-CYCLE CALLBACKS:
@@ -45,6 +49,9 @@ cc.Class({
   },
   playLoss: function playLoss() {
     cc.audioEngine.play(this.loss, false, 1);
+  },
+  playAgain: function playAgain() {
+    cc.audioEngine.play(this.again, false, 1);
   } // update (dt) {},
 
 });

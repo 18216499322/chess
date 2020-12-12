@@ -22,6 +22,10 @@ cc.Class({
         loss: {
             default: null,
             type: cc.AudioClip
+        },
+        again: {
+            default: null,
+            type: cc.AudioClip
         }
     },
 
@@ -51,6 +55,10 @@ cc.Class({
 
     playLoss(){
         cc.audioEngine.play(this.loss,false,1);
+    },
+
+    playAgain(){
+        cc.audioEngine.play(this.again,false,1);
     }
 
     // update (dt) {},

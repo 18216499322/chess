@@ -16,5 +16,5 @@
   "apiLevel": "",
   "appABIs": [],
   "vsVersion": "auto",
-  "buildScriptsOnly": false
+  "buildScriptsOnly": true
 }

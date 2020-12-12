@@ -16,7 +16,15 @@ cc.Class({
 
     forgive(){
         if(stack.length>0){
-            hasChess = true;
+            var hasChess = true;
+            var chess1 = null;
+            var chess2 = null;
+            var chess3 = null;
+            var chess4 = null;
+            var node1 = null;
+            var node2 = null;
+            var node3 = null;
+            var node4 = null;
             stack.forEach(function(item){
                 if(item.name.slice(0,1)==host){
                     hasChess = false;

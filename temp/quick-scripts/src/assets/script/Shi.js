@@ -12,6 +12,11 @@ cc.Class({
   // LIFE-CYCLE CALLBACKS:
   onLoad: function onLoad() {
     this.node.on(cc.Node.EventType.TOUCH_START, function (e) {
+      var name = null;
+      var loc_x = null;
+      var loc_y = null;
+      var x = null;
+      var y = null;
       name = this.node.name;
       loc_x = this.node.x; //实际坐标
 

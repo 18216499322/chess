@@ -1,9 +1,15 @@
 
+require('./assets/script/AICombatAgain');
+require('./assets/script/AICombatForgive');
+require('./assets/script/AICombatGameExit');
+require('./assets/script/AICombatLoss');
+require('./assets/script/AICombatTip');
 require('./assets/script/AboutGame');
 require('./assets/script/BgMusic');
 require('./assets/script/ButtonSound');
 require('./assets/script/Che');
 require('./assets/script/ChoiceGame');
+require('./assets/script/ComeAICombatGame');
 require('./assets/script/Commons');
 require('./assets/script/ConsoleGame');
 require('./assets/script/Forgive');

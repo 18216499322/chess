@@ -12,8 +12,11 @@ window.gameMap = [
     ['b_c_l','b_m_l','b_x_l','b_s_l','b_j','b_s_r','b_x_r','b_m_r','b_c_r']
 ]
 window.tip = [];
-window.curName;
+window.curName = 'r';
 window.stack = [];
+window.timeStamp = '';
+window.localHost = 'localhost:9999';
+window.regretCount = 3;
 cc.Class({
     extends: cc.Component,
     properties: {
